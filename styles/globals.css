@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#github path {
+    stroke-dasharray: 132;
+    stroke-dashoffset: 132;
+    animation: line-anim 2s normal forwards;
+    fill:none
+    
+    
+}
+@keyframes line-anim{
+    0% {
+        /* stroke-dashoffset: 550; */
+        stroke-dasharray: 132;
+    }
+    100% {
+        /* stroke-dashoffset: 0; */
+        stroke-dasharray: 198;
+                    
+}}
+
