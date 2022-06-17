@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     if (req.method === 'DELETE') {
         const note = await prisma.post.delete({
-            where: {id: (dataid)}
+            where: {id: String(dataid)}
         })
         res.json(dataid)
     } else {
