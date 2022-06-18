@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 
 function TextTyper() {
- const data = " Next-auth + Prisma + Tailwind + PlanetSale + Vercel"
+ const data = " Next-auth + Prisma + Tailwind + PlanetScale + Vercel"
   const [descDisplay,  setDescDisplay] = useState('')
 
   useState(() => {
