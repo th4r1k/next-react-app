@@ -1,7 +1,7 @@
 import { Popover } from '@headlessui/react'
 import { X } from 'phosphor-react'
 
-export function CloseButton() {
+function CloseButton() {
   return (
     <Popover.Button
       className="absolute top-5 right-5 text-zinc-400 hover:text-zinc-100 dark:text-black"
@@ -11,3 +11,5 @@ export function CloseButton() {
     </Popover.Button>
   )
 }
+
+export default CloseButton

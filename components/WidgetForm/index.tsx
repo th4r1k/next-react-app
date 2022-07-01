@@ -1,4 +1,4 @@
-import { CloseButton } from '../Closebutton'
+import CloseButton from '../Closebutton'
 
 export function WidgetForm() {
   return (

@@ -5,7 +5,7 @@ type TodosProps = {
   handleDelete: any
 }
 
-export const TodoList: React.FC<TodosProps> = ({ todos, handleDelete }) => {
+const TodoList: React.FC<TodosProps> = ({ todos, handleDelete }) => {
   return (
     <>
       {todos?.map((item, index) => (
@@ -64,3 +64,4 @@ export const TodoList: React.FC<TodosProps> = ({ todos, handleDelete }) => {
     </>
   )
 }
+export default TodoList

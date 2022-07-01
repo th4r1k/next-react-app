@@ -4,8 +4,8 @@ import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import Header from '../components/Header'
 import GoBack from '../components/Returnbutton'
-import { TodoList } from '../components/Todolist'
-import Toggletheme from '../components/toggletheme'
+import TodoList from '../components/Todolist'
+import Toggletheme from '../components/Toggletheme'
 import { getAllTodos, getAllTodosId, Todo, TodoId } from '../lib/db'
 
 interface PostProps {
