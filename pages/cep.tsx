@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import useViaCep from './api/cep/useviacepNumber'
 import Header from '../components/Header'
-import Toggletheme from '../components/toggletheme'
+import Toggletheme from '../components/Toggletheme'
 import GoBack from '../components/Returnbutton'
 import Cepo from './api/cep/cepAdress'
 import { useSession } from 'next-auth/react'

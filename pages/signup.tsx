@@ -1,6 +1,6 @@
 import { getSession } from 'next-auth/react'
 import GoBack from '../components/Returnbutton'
-import Toggletheme from '../components/toggletheme'
+import Toggletheme from '../components/Toggletheme'
 
 export async function getServerSideProps() {
   const session = await getSession()

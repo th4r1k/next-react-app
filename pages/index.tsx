@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import ToggleTheme from '../components/toggletheme'
+import ToggleTheme from '../components/Toggletheme'
 import { useSession } from 'next-auth/react'
 import Header from '../components/Header'
 import TextTyper from '../components/Text'
