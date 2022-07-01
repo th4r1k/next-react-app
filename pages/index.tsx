@@ -1,23 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import ToggleTheme from '../components/toggletheme'
-import {useSession} from 'next-auth/react'
-import Header from '../components/header'
-import TextTyper from '../components/text'
-
+import { useSession } from 'next-auth/react'
+import Header from '../components/Header'
+import TextTyper from '../components/Text'
 
 const Home: NextPage = () => {
-  const {data: session} = useSession()
-  
-  
+  const { data: session } = useSession()
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-gray-400 dark:bg-gray-800">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-400 py-2 dark:bg-gray-800">
       <Head>
         <title>TodoApp</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ToggleTheme  />
-      <Header session={session}/>
+      <ToggleTheme />
+      <Header session={session} />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center text-gray-800 dark:text-slate-300 ">
         <h1 className="text-6xl font-bold">
@@ -34,37 +32,31 @@ const Home: NextPage = () => {
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full ">
           <a
             href="/todoapp"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 hover:border-blue-600 focus:text-blue-600"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:border-blue-600 hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">ToDo &rarr;</h3>
-            <p className="mt-4 text-xl">
-              ToDo App 
-            </p>
+            <p className="mt-4 text-xl">ToDo App</p>
           </a>
 
           <a
             href="/login"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 hover:border-blue-600 focus:text-blue-600 "
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:border-blue-600 hover:text-blue-600 focus:text-blue-600 "
           >
             <h3 className="text-2xl font-bold">Login &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Google authentication
-            </p>
+            <p className="mt-4 text-xl">Google authentication</p>
           </a>
 
           <a
             href="/cep"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 hover:border-blue-600 focus:text-blue-600"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:border-blue-600 hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Find CEP &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Viacep API
-            </p>
+            <p className="mt-4 text-xl">Viacep API</p>
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 hover:border-blue-600 focus:text-blue-600"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:border-blue-600 hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
             <p className="mt-4 text-xl">
